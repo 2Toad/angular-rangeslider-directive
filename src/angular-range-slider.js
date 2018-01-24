@@ -333,11 +333,10 @@
       },
 
       template :  '<div class="bar"><div class="selection"></div></div>' +
-                  '<div class="handle low"></div>' +
+                  '<div class="handle low">{{ngModel || \'?\'}}</div>' +
                   '<div class="handle high"></div>' +
                   '<div class="bubble limit low">{{ floor }}</div>' +
                   '<div class="bubble limit high">{{ ceiling }}</div>' +
-                  '<div class="bubble value low">{{ ngModelLow }}</div>' +
                   '<div class="bubble value high">{{ ngModelHigh }}</div>'
 
     }
