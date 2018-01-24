@@ -56,7 +56,7 @@
     }
 
     function contain(value) {
-      if (isNaN(value)) return value;
+      if (isNaN(value)) value = 50;
       return Math.min(Math.max(0, value), 100);
     }
 
