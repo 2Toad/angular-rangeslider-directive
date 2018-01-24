@@ -77,7 +77,7 @@
         ngModelHigh : '=?'
       },
 
-      link : function(scope, element, attrs) {
+      link : function(scope, element, attrs, ngModel) {
 
         element.addClass('angular-range-slider');
 
@@ -143,6 +143,7 @@
             scope.ngModelHigh = roundStep(parseFloat(scope.ngModelHigh), parseInt(scope.precision), parseFloat(scope.step), parseFloat(scope.floor));
           } else {
             scope.ngModel = roundStep(parseFloat(scope.ngModel), parseInt(scope.precision), parseFloat(scope.step), parseFloat(scope.floor));
+            scope.ngModel && ngModel.$setDirty();
           }
 
           handleHalfWidth = lowPointer[0].offsetWidth / 2;
