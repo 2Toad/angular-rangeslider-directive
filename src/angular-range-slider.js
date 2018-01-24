@@ -1,7 +1,8 @@
 /*
- angular-range-slider v0.0.1
+ angular-range-slider v0.0.3
  https://github.com/supertorio/angular-range-slider
- */
+*/
+
 (function(angular, factory) {
   if (typeof define === 'function' && define.amd) {
     define('angular-range-slider', ['angular'], function(angular) {
