@@ -63,7 +63,7 @@
     return {
 
       restrict: 'EA',
-
+      require: "ngModel",
       scope: {
         floor       : '=?',
         ceiling     : '=?',
@@ -72,7 +72,7 @@
         precision   : '@',
         buffer      : '@',
         dragstop    : '@',
-        ngModel     : '=?',
+        ngModel     : '=',
         ngModelLow  : '=?',
         ngModelHigh : '=?'
       },
